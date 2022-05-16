@@ -27,7 +27,11 @@
     <hook type="before_compile" src="scripts/save_assets_hashes.js" />
 
     <platform name="android">
-
+        
+    <preference name="EXCLUDE_ASSETS_EXTENSIONS" default=" " />
+    <preference name="ENABLE_CORDOVA_CALLBACK" default="false" />
+    <preference name="ENABLE_DEBUG_DETECTION" default="false" />
+        
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AntiTamperingPlugin">
                 <param name="android-package" value="com.duddu.antitampering.AntiTamperingPlugin"/>
@@ -43,7 +47,11 @@
     </platform>
 
     <platform name="ios">
-
+        
+    <preference name="EXCLUDE_ASSETS_EXTENSIONS" default=" " />
+    <preference name="ENABLE_CORDOVA_CALLBACK" default="false" />
+    <preference name="ENABLE_DEBUG_DETECTION" default="false" />
+        
         <config-file target="config.xml" parent="/*">
             <feature name="AntiTamperingPlugin">
                 <param name="ios-package" value="AntiTamperingPlugin"/>
