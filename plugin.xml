@@ -29,8 +29,8 @@
     <platform name="android">
         
     <preference name="EXCLUDE_ASSETS_EXTENSIONS" default=" " />
-    <preference name="ENABLE_CORDOVA_CALLBACK" default="false" />
-    <preference name="ENABLE_DEBUG_DETECTION" default="false" />
+    <preference name="ENABLE_CORDOVA_CALLBACK" default="true" />
+    <preference name="ENABLE_DEBUG_DETECTION" default="true" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AntiTamperingPlugin">
@@ -47,11 +47,7 @@
     </platform>
 
     <platform name="ios">
-        
-    <preference name="EXCLUDE_ASSETS_EXTENSIONS" default=" " />
-    <preference name="ENABLE_CORDOVA_CALLBACK" default="false" />
-    <preference name="ENABLE_DEBUG_DETECTION" default="false" />
-        
+                
         <config-file target="config.xml" parent="/*">
             <feature name="AntiTamperingPlugin">
                 <param name="ios-package" value="AntiTamperingPlugin"/>
