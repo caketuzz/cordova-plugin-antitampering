@@ -18,8 +18,8 @@
     </js-module>
 
     <preference name="EXCLUDE_ASSETS_EXTENSIONS" default=" " />
-    <preference name="ENABLE_CORDOVA_CALLBACK" default="false" />
-    <preference name="ENABLE_DEBUG_DETECTION" default="false" />
+    <preference name="ENABLE_CORDOVA_CALLBACK" default="true" />
+    <preference name="ENABLE_DEBUG_DETECTION" default="true" />
 
     <hook type="after_plugin_install" src="scripts/handle_plugin_preferences.js" />
     <hook type="after_prepare" src="scripts/handle_plugin_preferences.js" />
@@ -27,10 +27,6 @@
     <hook type="before_compile" src="scripts/save_assets_hashes.js" />
 
     <platform name="android">
-        
-    <preference name="EXCLUDE_ASSETS_EXTENSIONS" default=" " />
-    <preference name="ENABLE_CORDOVA_CALLBACK" default="true" />
-    <preference name="ENABLE_DEBUG_DETECTION" default="true" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AntiTamperingPlugin">
